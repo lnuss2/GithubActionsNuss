@@ -7,7 +7,7 @@ namespace GithubActionsLab
     public class Math
     {
         [Test]
-        public void Add_Valid()
+        public void Add_ValidNuss()
         {
             Assert.AreEqual(3, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
@@ -15,7 +15,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Invalid()
+        public void Add_InvalidNuss()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
@@ -23,7 +23,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Null()
+        public void Add_NullNuss()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
@@ -33,7 +33,7 @@ namespace GithubActionsLab
         // Implement 3 tests per operation, following a similar pattern as above
 
         [Test]
-        public void Sub_Valid()
+        public void Sub_ValidNuss()
         {
             Assert.AreEqual(-1, Program.Subtract("1", "2"));
             Assert.AreEqual(1, Program.Subtract("3", "2"));
@@ -41,7 +41,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Invalid()
+        public void Sub_InvalidNuss()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -49,7 +49,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Null()
+        public void Sub_NullNuss()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -57,7 +57,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Mult_Valid()
+        public void Mult_ValidNuss()
         {
             Assert.AreEqual(2, Program.Multiply("1", "2"));
             Assert.AreEqual(6, Program.Multiply("3", "2"));
@@ -65,7 +65,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Mult_Invalid()
+        public void Mult_InvalidNuss()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -73,7 +73,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Mult_Null()
+        public void Mult_NullNuss()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -81,7 +81,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Div_Valid()
+        public void Div_ValidNuss()
         {
             Assert.AreEqual(0.5, Program.Divide("1", "2"));
             Assert.AreEqual(3, Program.Divide("3", "1"));
@@ -89,7 +89,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Div_Invalid()
+        public void Div_InvalidNuss()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -97,7 +97,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Div_Null()
+        public void Div_NullNuss()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -105,7 +105,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Pow_Valid()
+        public void Pow_ValidNuss()
         {
             Assert.AreEqual(1, Program.Power("1", "2"));
             Assert.AreEqual(9, Program.Power("3", "2"));
@@ -113,7 +113,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Pow_Invalid()
+        public void Pow_InvalidNuss()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -121,7 +121,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Pow_Null()
+        public void Pow_NullNuss()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
